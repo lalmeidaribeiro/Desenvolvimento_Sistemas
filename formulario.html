@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UFT-8"/>
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <form name="login" action="login.py" method="POST"><!--Propriedades do formulário 'action leva pra algum lugar'-->
+        <!--metodo="get"-> mostra a senha na url-->
+        <!--required-> campo obrigatório-->
+        <label>Nome do Usuário:</label><br/>
+        <input type="text" maxlength='8' placeholder="Digite" name="user" required/><br/><!--maxlenght determina o tamanho do campo.///value="Digite o nome"- para o campo-->
+       
+        <label>Senha:</label><br/>
+        <input type="password" maxlength="8" name="password"/><br/><br/>
+        
+        <!--Permite um campo de digitação-->
+        <textarea name="mensagem">
+        </textarea><br/><br/>
+   
+        <input type="submit" value="OK"/>
+        <input type="reset" value="Limpar"/><br/><br/>
+
+        <!--Campos de seleção-->
+        <label>Estado:<label>
+        <select name="estado"">
+            <option value="SC">Santa Catarina</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+        </select><br/><br/>
+        
+        <!-- campo de Checkbox -->
+        <input type="radio" value="SP" name="estado"/>São Paulo<br/>
+        <input type="radio" value="SP" name="estado"/>São Paulo<br/>
+        <input type="checkbox" value="RJ"/>Rio de Janeiro<br/>
+        <input type="checkbox" value="ES"/>Vitória<br/>
+    </form>
+</Body>
+</html>
